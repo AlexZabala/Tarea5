@@ -1,0 +1,34 @@
+.padre {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr auto;
+  grid-gap: 5px;
+  /*width: 100%;
+  height: 80vh;*/
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "cont1 cont2 cont3";
+}
+.header {
+  grid-area: header;
+}
+h1 {
+  grid-area: header;
+}
+.nav,
+.navbar {
+  grid-area: nav;
+}
+.cont1,
+.carousel {
+  grid-area: cont1;
+}
+.cont2,
+.accordion {
+  grid-area: cont2;
+}
+.cont3, .card {
+  grid-area: cont3;
+}

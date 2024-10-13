@@ -1,0 +1,30 @@
+.padre {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "nav nav nav"
+    "h1 h1 h1"
+    "container container container"
+    "cont1 cont1 cont2"
+    "footer footer footer";
+}
+.nav,
+.navbar {
+  grid-area: nav;
+}
+h1 {
+  grid-area: h1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container, .card-group{
+  grid-area: container;
+}
+.cont1, .accordion{
+  grid-area: cont1;
+}
+.cont2, .card{
+  grid-area: cont2;
+}
